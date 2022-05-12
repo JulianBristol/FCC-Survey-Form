@@ -1,0 +1,78 @@
+body{
+  
+}
+#survey-page{
+  background: linear-gradient(35deg, #FFD505, #FF8000, #321E50, #000041);
+  background-repeat: no-repeat;
+  margin: -28px -10px;
+  position: relative;
+  
+}
+#title{
+  text-align: center;
+  font-size: 40px;
+  background-color: darkgray;
+}
+#description{
+  background: linear-gradient(140deg, #ccfffc, #ffcccf);
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.53), -2px 5px 10px rgba(0,0,0,0.9);
+  border: 2px solid;
+  border-color: rgba(150, 0, 57, 0.75);
+  border-radius: 10px;
+  width: 600px;
+  
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  padding: 15px;
+  margin: auto;
+}
+#survey-form-box{
+  background: linear-gradient(140deg, #ccfffc, #ffcccf);
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.53), -2px 5px 10px rgba(0,0,0,0.9);
+  border: 2px solid;
+  border-color: rgba(150, 0, 57, 0.75);
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  
+  
+  position: relative;
+  margin: 20px auto;
+}
+#survey-form-elements{
+  position: relative;
+  left: 35%;
+  top: 10%;
+  transform: scale(1.6);
+  line-height: 30px;
+}
+#survey-form{
+  width: 200px;
+  opacity: ;
+}
+.button{
+  background-color: #FFC300;
+  border-radius: 25%;
+}
+.button:hover{
+  animation-name: submit-button;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes submit-button{
+  100%{
+    background-color: rgb(110,200,90);
+  }
+}
+#fcc-div-footer{
+  background-color: black;
+  height: 40px;
+  position: relative;
+  top: 40px;
+  padding: 10px 30px;
+  margin: -10px;
+}
+footer{
+  color: white;
+}
