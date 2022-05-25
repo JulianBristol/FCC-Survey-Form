@@ -1,4 +1,5 @@
 # FCC Survey Form
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/julianbristol/pen/MWQaRmw](https://codepen.io/julianbristol/pen/MWQaRmw).
+This is a webpage built to pass the "Build a Survey Form" certification for [https://freecodecamp.com](https://freecodecamp.com)
 
+You can view the webpage at [Build a Survey Form](https://julianbristol.github.io/)
