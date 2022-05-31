@@ -4,10 +4,11 @@
 }
 body{
   display: grid;
-  grid-template-rows: 225px 1fr 300px; /*header body-content footer*/
+  grid-template-rows: 225px 1fr 200px; /*header body-content footer*/
   grid-template-areas: "header" "content" "footer";
   row-gap: 10px;
-  background-color: rgb(30, 35, 40);
+  background-color: hsl(210deg 8% 15%);
+  height: 100vh;
 }
 
 .section-border{
@@ -18,8 +19,8 @@ body{
 header{
   grid-area: header;
   display: grid;
-  grid-template-columns: 50px 100px auto 100px 50px  ; /*left-edge, logo content(title, navigation), space, right-edge*/
-  grid-template-rows: 25px 100px 50px; /*space, logo title, subtitle, navigation*/
+  grid-template-columns: 50px 100px auto 100px 50px; /*There is an issue with the nav bar display when screensize changes*/
+  grid-template-rows: 25px 100px 50px;
   grid-template-areas:
   "space space space space space" 
   "space4 logo title space5 space5" 
@@ -60,7 +61,7 @@ nav{
   font: 18pt "Macondo";
   line-height: 20px;
 }
-nav>ul>li{
+nav li{
   list-style-type: none;
   float: left;
   text-align: center;
@@ -96,6 +97,65 @@ ul{
 /* Footer */
 footer{
   grid-area: footer;
-  background-color: aliceblue;
+  background-color: rgb(30, 30, 30);
+  color: hsl(210deg 8% 75%);
 }
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) ;
+  grid-template-rows: auto auto;
+  grid-template: 
+  "one two three four five"
+  "copyright copyright copyright copyright copyright";
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50vw;
+  margin: 10px auto;
+}
+.footer-content div{
+  min-width: 150px;
+  max-width: 300px;
+}
+.footer-heading{
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-variant: small-caps;
+  font-size: 12pt;
+}
+footer li{
+  list-style-type: none;
+  font-size: 10pt;
+}
+footer a{
+  color: hsl(210deg 8% 55%);
+  text-decoration: none;
+}
+footer a:hover{
+  color:brown;
+}
+.footer-connect{
+  grid-area: one;
+}
+.footer-company{
+  grid-area: two;
+}
+.footer-services{
+grid-area: three;
+}
+.footer-get-help{
+  grid-area: four;
+}
+.footer-mailing{
+  grid-area: five;
+}
+#copyright{
+  grid-area: copyright;
+}
+
+
+
+
+
 /* End of Footer */
