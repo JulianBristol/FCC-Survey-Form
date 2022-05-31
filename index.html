@@ -1,32 +1,59 @@
 <!Doctype html>
 <html>
+
 <head>
-    <title>FCC Survey Form</title>
-    <link rel="stylesheet" href="style.css" />
+  <title>FCC Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1 id="title">Milkshake's Cat Café Survey</h1>
-  <div id="survey-page">
+  <header class="section-border">
+    <a href="https://julianbristol.github.io/" class="logo"><img id="logo-image" src="src/Images/Purrfect Cup Logo.png"
+        alt="Purrfect Cup logo"></a>
+    <span class="logo" id="logo-text">Purrfect Cup</span>
+    <h1 id="title">We Need Your Help!</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Meet the Felines</li>
+        <li>Adopt a Cat</li>
+        <li>News & Events</li>
+        <li>Gallery</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+  </header>
+  <div id="survey-page" class="section-border">
     <section id="welcome-section">
       <p id="welcome">Welcome to Milkshake's Cat Café
       <p id="subtitle">Because cats and coffee makes the world go round</p>
     </section>
     <section id="description-box">
-      <p>Milkshake's Cat Café strives to engage you with an experience that cannot be recreated any where. Our selection of teas, coffee, and other treats are formulated to evigorate the sense and banish the stresses accumulated from everyday life.</p>
-      <p>Our affection associates (our cats and kittens) are trained to enforce an environment of peace and leisure. We offer a selection of cat treats with every order so that you can tip your favorite Affection Associate. You can also use any of the provided cat toys free of charge.</p> 
-      <p>All around, an experience here are Milkshake's Cat Café transends the physical realm and heals the spiritual body. Watch your negative emotions melt away with the therapuetic aroma of our fresh tea and coffee blends. Be enveloped in childlike bliss with our furry friends.</p>
+      <p>Milkshake's Cat Café strives to engage you with an experience that cannot be recreated any where. Our selection
+        of teas, coffee, and other treats are formulated to evigorate the sense and banish the stresses accumulated from
+        everyday life.</p>
+      <p>Our affection associates (our cats and kittens) are trained to enforce an environment of peace and leisure. We
+        offer a selection of cat treats with every order so that you can tip your favorite Affection Associate. You can
+        also use any of the provided cat toys free of charge.</p>
+      <p>All around, an experience here are Milkshake's Cat Café transends the physical realm and heals the spiritual
+        body. Watch your negative emotions melt away with the therapuetic aroma of our fresh tea and coffee blends. Be
+        enveloped in childlike bliss with our furry friends.</p>
       </article>
-      <p id="description"> We are always looking for suggestions. Please fill out the form below to tell us your thoughts. </p>
-      <p id="incentive"><i>As a bonus, you will also recieve a <b>10% discount coupon</b> on selected items for your next visit.</i></p>
-    </section> <!--End of Description-box-->
-    
+      <p id="description"> We are always looking for suggestions. Please fill out the form below to tell us your
+        thoughts. </p>
+      <p id="incentive"><i>As a bonus, you will also recieve a <b>10% discount coupon</b> on selected items for your
+          next visit.</i></p>
+    </section>
+    <!--End of Description-box-->
+
     <div id="survey-form-box">
       <div id="survey-form-elements">
         <form id="survey-form">
           <label for="name" id="name-label">Name:
             <input type="text" placeholder="Enter your first name" class="form-group" id="name" required>
           </label>
-          <label for ="last-name" id="lname-label">Last Name:
+          <label for="last-name" id="lname-label">Last Name:
             <input type="text" placeholder="Enter your last name" class="form-group" id="last-name">
           </label>
           <label for="email" id="email-label">Email:
@@ -36,49 +63,101 @@
             <input type="number" id="number" placeholder="Age" max="120" class="form-group" min="13">
           </label>
           <label for="favorite-item" id="favorite-item-label">What is your favorite item on the menu?
-              <select id="dropdown" name="menu-items">
-                  <option value="beverage">Teas, Coffee, Juices</option>
-                  <option value="snacks">Cookies, Scones, Other Pastries</option>
-                  <option value="sandwiches">Hot Sandwiches, Cold Sandwiches, and Panini Sandwiches</option>
-                  <option value="soup">Soups, Chili, and Broths</option>
-                  <option value="salad">Salad</option>
-                  <option value="fruit">Fruits and Fruit Salad</option>
-                  <option value="other">Other</option>
-              </select>
+            <select id="dropdown" name="menu-items">
+              <option value="beverage">Teas, Coffee, Juices</option>
+              <option value="snacks">Cookies, Scones, Other Pastries</option>
+              <option value="sandwiches">Hot Sandwiches, Cold Sandwiches, and Panini Sandwiches</option>
+              <option value="soup">Soups, Chili, and Broths</option>
+              <option value="salad">Salad</option>
+              <option value="fruit">Fruits and Fruit Salad</option>
+              <option value="other">Other</option>
+            </select>
           </label>
-          <label for="recommend-to-friend" id="recommendation-label">Would you recommend a friend to Milkshake's Cat Café?<br>
-              <label for="totally">Totally!</label>
-              <input type="radio" id="totally" name="recommend-to-friend" value="Totally!"><br>
-              <label for="totally">I'm not really sure...</label>
-              <input type="radio" id="unsure" name="recommend-to-friend" value="I'm not really sure..."><br>
-              <label for="totally">Absolutely Not!</label>
-              <input type="radio" id="absolutely-not" name="recommend-to-friend" value="Absolutely Not!">
+          <label for="recommend-to-friend" id="recommendation-label">Would you recommend a friend to Milkshake's Cat
+            Café?<br>
+            <label for="totally">Totally!</label>
+            <input type="radio" id="totally" name="recommend-to-friend" value="Totally!"><br>
+            <label for="totally">I'm not really sure...</label>
+            <input type="radio" id="unsure" name="recommend-to-friend" value="I'm not really sure..."><br>
+            <label for="totally">Absolutely Not!</label>
+            <input type="radio" id="absolutely-not" name="recommend-to-friend" value="Absolutely Not!">
           </label>
           <label for="improvements" id="improvements-label">
-              <input type="checkbox" id="cat-staffing" name="improvements" value="bad cat">
-              <label for="cat-staffing">Work on our Cattitude/Remove a cat</label>
-              <input type="checkbox" id="menu-changes" name="improvements" value="change the menu">
-              <label for="menu-changes">Update the selection of menu items</label>
-              <input type="checkbox" id="reduce-prices" name="improvements" value="reduce prices">
-              <label for="reduce-prices">Menu Item Prices are too high</label>
-              <input type="checkbox" id="treats-and-toys" name="improvements" value="treats toys">
-              <label for="treats-and-toys">Change the selection of available toys and treats</label>
-              <input type="checkbox" id="other" name="improvements" value="other">
-              <label for="other">Other <span class="lighten-text">(explain below)</span></label>
-              <textarea id="additional-improvements" name="custom-suggestions" rows="4" cols="50" placeholder="Suggest other improvements"></textarea>
-          </label>
-          <label for="submit" id="submit-label">
+            <input type="checkbox" id="cat-staffing" name="improvements" value="bad cat">
+            <label for="cat-staffing">Work on our Cattitude/Remove a cat</label>
+            <input type="checkbox" id="menu-changes" name="improvements" value="change the menu">
+            <label for="menu-changes">Update the selection of menu items</label>
+            <input type="checkbox" id="reduce-prices" name="improvements" value="reduce prices">
+            <label for="reduce-prices">Menu Item Prices are too high</label>
+            <input type="checkbox" id="treats-and-toys" name="improvements" value="treats toys">
+            <label for="treats-and-toys">Change the selection of available toys and treats</label>
+            <input type="checkbox" id="other" name="improvements" value="other">
+            <label for="other">Other <span class="lighten-text">(explain below)</span></label>
+            <textarea id="additional-improvements" name="custom-suggestions" rows="4" cols="50"
+              placeholder="Suggest other improvements"></textarea>
+          </label><label for="submit" id="submit-label">
             <input type="submit" id="submit" class="form-group button">
           </label>
         </form>
-      </div> <!--End of Survey-form-elements-->
-    </div> <!--End of Survey-form-box-->
-    
-  </div> <!--End of survey-page-->
-<div id="fcc-div-footer">
-      <footer>
-        <p>&copy; 2022 &nbsp;Julian Bristol &nbsp;All rights reserved.</p>
-      </footer>
-    </div> <!--End of fcc-div-footer-->
+      </div>
+      <!--End of Survey-form-elements-->
+    </div>
+    <!--End of Survey-form-box-->
+
+  </div>
+  <!--End of survey-page-->
+  <footer>
+    <div class="footer-content">
+  <div class="footer-connect">
+    <div class="footer-heading">Connect</div>
+    <ul>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Find us on Facebook</a></li>
+      <li><a href="#">Follow us on Twitter</a></li>
+      <li><a href="#">Follow us on Instagram</a></li>
+      <li><a href="#">Follow us on TikTok</a></li>
+    </ul>
+  </div>
+  <div class="footer-company">
+    <div class="footer-heading">Company</div>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Find a Location</a></li>
+    </ul>
+  </div>
+  <div class="footer-services">
+    <div class="footer-heading">Services</div>
+    <ul>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Adoption</a></li>
+      <li><a href="#">Gift Cards and Promotions</a></li>
+      <li><a href="#">Rewards</a></li>
+    </ul>
+  </div>
+  <div class="footer-get-help">
+    <div class="footer-heading">Get Help</div>
+    <ul>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </div>
+  <div class="footer-mailing footer" id="mailing-list">
+    <div class="footer-heading">Join Our Mailing List</div>
+    <p>Sign up to be notified of our special promotions, new products list, secret menu, and more.</p>
+    <form id="mailing-list-form">
+      <label for="mailing-list-email" id="mailing-list-email-label">
+        <input type="email" name="mailing-list-email" placeholder="Email Address">
+      </label>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+    <p id="copyright">&copy; 2022 &nbsp;Julian Bristol &nbsp;All rights reserved.</p>
+  </div>
+  </footer>
 </body>
+
 </html>
