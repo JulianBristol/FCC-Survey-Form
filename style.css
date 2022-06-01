@@ -80,17 +80,60 @@ ul{
 /* End of Header Content */
 
 /* Main Content */
-#survey-page{
+#page-content{
   background-color: blueviolet;
   display: grid;
-  grid-template-columns: 160px auto 160px  ; /*left-edge, logo content(title, navigation), space, right-edge*/
-  grid-template-rows: 25px 100px 50px; /*space, logo title, subtitle, navigation*/
+  grid-area: content;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  "space space space space space" 
-  "space4 logo title space5 space5" 
-  "space4 logo-name navigation space5 space5"; /*I feel like this could have been done better*/
-  row-gap: 10px;
+  "space1 subtitle space2" 
+  "space1 content space2" 
+  "space1 form space2";
+  row-gap: 5px;
   column-gap: 50px;
+}
+#subtitle{
+  grid-area: subtitle;
+  margin: auto;
+}
+#description-box{
+  grid-area: content;
+  max-width: 600px;
+  margin: auto;
+}
+#survey-form-box{
+grid-area: form;
+max-width: 600px;
+margin: auto;
+border: 2px solid red;
+}
+.label-user-data{
+  display: flex;
+  flex-direction: column;
+}
+.input-box{
+  max-width: 300px;
+}
+#inprovements-checkbox-div{
+  display: flex;
+  flex-direction: row;
+  margin: auto 25px;
+  column-gap: 20px;
+}
+.improvements-checkbox{
+margin-left: -20px;
+}
+.improvements-label{
+margin-right: 18px;
+}
+#improvements-left-column{
+  order: 1;
+  width: 50%;
+}
+#improvements-right-column{
+  order: 2;
+  width: 50%;
 }
 /* End of Main Content */
 
