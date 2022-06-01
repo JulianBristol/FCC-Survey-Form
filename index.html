@@ -29,7 +29,7 @@
     <h2 id="subtitle">We value your feedback</h2>
     <section id="description-box">
       <p>Purrfect Cup strives to engage you with an experience that cannot be recreated elsewhere. Our selection
-        of teas, coffee, and other treats are formulated to evigorate the sense and banish the stresses accumulated from
+        of teas, coffee, and other treats are formulated to evigorate the senses and banish the stresses accumulated from
         everyday life.</p>
       <p>Our affection associates (our cats and kittens) are trained to enforce an environment of peace and leisure. We
         offer a selection of cat treats with every order so that you can tip your favorite Affection Associate. You can
@@ -48,23 +48,23 @@
     <div id="survey-form-box">
       <div id="survey-form-elements">
         <form id="survey-form">
-          <label for="name" id="name-label">Name:
-            <input type="text" placeholder="Enter your first name" class="form-group" id="name" required>
+          <label for="name" class="label-user-data" id="name-label">Name
+            <input type="text" placeholder="First Name" class="form-group input-box" id="name" required>
           </label><br>
-          <label for="last-name" id="lname-label">Last Name:
-            <input type="text" placeholder="Enter your last name" class="form-group" id="last-name">
+          <label for="last-name" id="lname-label" class="label-user-data">Last Name
+            <input type="text" placeholder="Last Name" class="form-group input-box" id="last-name">
           </label><br>
-          <label for="email" id="email-label">Email:
-            <input type="email" placeholder="Enter your Email address" id="email" class="form-group" required>
+          <label for="email" class="label-user-data" id="email-label">Email Address
+            <input type="email" placeholder="Email" id="email" class="form-group input-box" required>
           </label><br>
-          <label for="age" id="number-label">Age:
-            <input type="number" id="number" placeholder="Age" max="120" class="form-group" min="13">
+          <label for="age" class="label-user-data" id="number-label">Age
+            <input type="number" id="number" placeholder="Age" max="120" class="form-group input-box" min="13">
           </label><br>
-          <label for="favorite-item" id="favorite-item-label">What is your favorite item on the menu?
-            <select id="dropdown" name="menu-items">
+          <label for="favorite-item" class="label-user-data" favorite-item-label">What is your favorite item on the menu?
+            <select id="dropdown" name="menu-items" class="input-box">
               <option value="beverage">Teas, Coffee, Juices</option>
               <option value="snacks">Cookies, Scones, Other Pastries</option>
-              <option value="sandwiches">Hot Sandwiches, Cold Sandwiches, and Panini Sandwiches</option>
+              <option value="sandwiches">Hot Sandwiches, Cold Sandwiches,Premium Sandwiches</option>
               <option value="soup">Soups, Chili, and Broths</option>
               <option value="salad">Salad</option>
               <option value="fruit">Fruits and Fruit Salad</option>
@@ -72,27 +72,35 @@
             </select>
           </label><br>
           <label for="recommend-to-friend" id="recommendation-label">Would you recommend a friend to Purrfect Cup?<br>
-            <label for="totally">Totally!</label>
-            <input type="radio" id="totally" name="recommend-to-friend" value="Totally!"><br>
-            <label for="totally">I'm not really sure...</label>
-            <input type="radio" id="unsure" name="recommend-to-friend" value="I'm not really sure..."><br>
-            <label for="totally">Absolutely Not!</label>
+            <input type="radio" id="totally" name="recommend-to-friend" value="Totally!" checked>
+            <label for="totally">Totally!</label><br>
+            <input type="radio" id="unsure" name="recommend-to-friend" value="I'm not really sure...">
+            <label for="unsure">I'm not really sure...</label><br>
             <input type="radio" id="absolutely-not" name="recommend-to-friend" value="Absolutely Not!">
+            <label for="absolutely-not">Absolutely Not!</label>
           </label><br>
-          <label for="improvements" id="improvements-label">
-            <input type="checkbox" id="cat-staffing" name="improvements" value="complaint about a cat">
-            <label for="cat-staffing">Work on our Cattitude/Remove a cat</label>
-            <input type="checkbox" id="menu-changes" name="improvements" value="change the menu">
-            <label for="menu-changes">Update the selection of menu items</label><br>
-            <input type="checkbox" id="reduce-prices" name="improvements" value="reduce prices">
-            <label for="reduce-prices">Menu Item Prices are too high</label>
-            <input type="checkbox" id="treats-and-toys" name="improvements" value="treats toys">
-            <label for="treats-and-toys">Change the selection of available toys and treats</label><br>
-            <input type="checkbox" id="other" name="improvements" value="other">
-            <label for="other">Other <span class="lighten-text">(explain below)</span></label><br>
-            <textarea id="additional-improvements" name="custom-suggestions" rows="4" cols="50"
+          
+          <label for="improvements" id="improvements-label">What are some improvements that can be made?<br>
+            <div id="inprovements-checkbox-div">
+            <div id="improvements-right-column">
+            <input type="checkbox" class="improvements-checkbox" id="cat-staffing" name="improvements" value="complaint about a cat">
+            <label for="cat-staffing" class="improvements-label">Work on our Cattitude/Remove a cat</label><br>
+            <input type="checkbox" class="improvements-checkbox" id="menu-changes" name="improvements" value="change the menu">
+            <label for="menu-changes" class="improvements-label">Update the selection of menu items</label>
+            </div>
+            <div id="improvements-left-column">
+            <input type="checkbox" class="improvements-checkbox" id="reduce-prices" name="improvements" value="reduce prices">
+            <label for="reduce-prices" class="improvements-label">Menu Item Prices are too high</label><br>
+            <input type="checkbox" class="improvements-checkbox" id="treats-and-toys" name="improvements" value="treats toys">
+            <label for="treats-and-toys" class="improvements-label">Change the selection of available toys and treats</label><br>
+            <input type="checkbox" class="improvements-checkbox" id="other" name="improvements" value="other">
+            <label for="other" class="improvements-label">Other <span class="lighten-text">(explain below)</span></label>
+          </div>
+          </div><br>
+            <textarea id="additional-improvements" name="custom-suggestions" class="input-box" rows="4" cols="50"
               placeholder="Suggest other improvements"></textarea>
-          </label><label for="submit" id="submit-label">
+          </label><br>
+          <label for="submit" id="submit-label">
             <input type="submit" id="submit" class="form-group button">
           </label>
         </form>
