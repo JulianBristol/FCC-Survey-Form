@@ -4,7 +4,7 @@
 }
 body{
   display: grid;
-  grid-template-rows: 225px 1fr 200px; /*header body-content footer*/
+  grid-template-rows: 125px 1fr 200px; /*header body-content footer*/
   grid-template-areas: "header" "content" "footer";
   row-gap: 10px;
   background-color: hsl(210deg 8% 15%);
@@ -20,11 +20,10 @@ header{
   grid-area: header;
   display: grid;
   grid-template-columns: 50px 100px auto 100px 50px; /*There is an issue with the nav bar display when screensize changes*/
-  grid-template-rows: 25px 100px 50px;
+  grid-template-rows: 100px 50px;
   grid-template-areas:
-  "space space space space space" 
-  "space4 logo title space5 space5" 
-  "space4 logo-name navigation space5 space5"; /*I feel like this could have been done better*/
+  "space4 logo navigation space5 space5" 
+  "space4 logo-name space space5 space5"; /*I feel like this could have been done better*/
   row-gap: 10px;
   column-gap: 50px;
   background-color: rgb(100, 166, 240);
@@ -41,34 +40,34 @@ header{
 #logo-text{
   font-family: "Macondo";
   grid-area: logo-name;
-  margin-top: -10px;
+  margin-top: -30px;
   margin-left: -40px;
   width: 200px;
   font-size: 25pt;
 }
-#title{
-  font-family: "Macondo";
-  font-size: 35pt;
-  text-align: center;
-  grid-area: title;
-  align-items: center;
-  justify-content: center;
-}
+
 nav{
   grid-area: navigation;
-  background: black;
-  margin: auto;
+  margin: 20px auto 0px auto;
   font: 18pt "Macondo";
   line-height: 20px;
+  height: 50px;
 }
 nav li{
   list-style-type: none;
   float: left;
   text-align: center;
-  background: green;
   width: 150px;
-  height: 55px;
+  height: 100%;
   padding-top: 20px;
+  transition: 0.4s;
+}
+nav li:hover{
+  color: gray;
+}
+nav a{
+  text-decoration: none;
+  color: inherit;
 }
 ul{
   width: 100%;
@@ -87,16 +86,20 @@ ul{
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
-  "space1 subtitle space2" 
+  "space1 title space2" 
   "space1 content space2" 
   "space1 form space2";
   row-gap: 5px;
   column-gap: 50px;
   font-size: 14pt;
 }
-#subtitle{
-  grid-area: subtitle;
-  margin: auto;
+#title{
+  font-family: "Macondo";
+  font-size: 35pt;
+  text-align: center;
+  grid-area: title;
+  align-items: center;
+  justify-content: center;
 }
 #description-box{
   grid-area: content;
@@ -229,9 +232,8 @@ grid-area: three;
 #copyright{
   grid-area: copyright;
 }
-
-
-
-
-
 /* End of Footer */
+
+/* Beginning of Responsive Design */
+/* first resolution to deal with 1566 width 800+ height */
+/* End of Responsive Design */
