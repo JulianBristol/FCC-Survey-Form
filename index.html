@@ -24,12 +24,12 @@
       </ul>
     </nav>
   </header>
-  
   <div id="page-content" class="section-border">
     <h2 id="subtitle">We value your feedback</h2>
     <section id="description-box">
       <p>Purrfect Cup strives to engage you with an experience that cannot be recreated elsewhere. Our selection
-        of teas, coffee, and other treats are formulated to evigorate the senses and banish the stresses accumulated from
+        of teas, coffee, and other treats are formulated to evigorate the senses and banish the stresses accumulated
+        from
         everyday life.</p>
       <p>Our affection associates (our cats and kittens) are trained to enforce an environment of peace and leisure. We
         offer a selection of cat treats with every order so that you can tip your favorite Affection Associate. You can
@@ -38,7 +38,8 @@
         body. Watch your negative emotions melt away with the therapuetic aroma of our fresh tea and coffee blends. Be
         enveloped in childlike bliss with our furry friends.</p>
       </article>
-      <p id="description"> We are always looking for suggestions to improve your experience here at Purrfect Cup. Please fill out the form below to tell us your
+      <p id="description"> We are always looking for suggestions to improve your experience here at Purrfect Cup. Please
+        fill out the form below to tell us your
         thoughts. </p>
       <p id="incentive"><i>As a bonus, you will also recieve a <b>10% discount coupon</b> on selected items for your
           next visit.</i></p>
@@ -48,19 +49,21 @@
     <div id="survey-form-box">
       <div id="survey-form-elements">
         <form id="survey-form">
-          <label for="name" class="label-user-data" id="name-label">Name
-            <input type="text" placeholder="First Name" class="form-group input-box" id="name" required>
-          </label><br>
-          <label for="last-name" id="lname-label" class="label-user-data">Last Name
-            <input type="text" placeholder="Last Name" class="form-group input-box" id="last-name">
-          </label><br>
-          <label for="email" class="label-user-data" id="email-label">Email Address
-            <input type="email" placeholder="Email" id="email" class="form-group input-box" required>
-          </label><br>
-          <label for="age" class="label-user-data" id="number-label">Age
+          <div id="user-data">
+            <div id="form-labels">
+              <label for="name" class="label-user-data" id="name-label">First Name</label><br>
+              <label for="last-name" class="label-user-data" id="lname-label">Last Name</label><br>
+              <label for="email" class="label-user-data" id="email-label">Email Address</label><br>
+              <label for="age" class="label-user-data" id="number-label">Age</label>
+            </div>
+            <div id="form-input">
+              <input type="text" placeholder="First Name" class="form-group input-box" id="name" required><br>
+            <input type="text" placeholder="Last Name" class="form-group input-box" id="last-name"><br>
+            <input type="email" placeholder="Email" id="email" class="form-group input-box" required><br>
             <input type="number" id="number" placeholder="Age" max="120" class="form-group input-box" min="13">
-          </label><br>
-          <label for="favorite-item" class="label-user-data" favorite-item-label">What is your favorite item on the menu?
+            </div>
+          </div><br>
+          <label for="favorite-item" id="dropdown-label" favorite-item-label">What is your favorite item on the menu?
             <select id="dropdown" name="menu-items" class="input-box">
               <option value="beverage">Teas, Coffee, Juices</option>
               <option value="snacks">Cookies, Scones, Other Pastries</option>
@@ -79,27 +82,33 @@
             <input type="radio" id="absolutely-not" name="recommend-to-friend" value="Absolutely Not!">
             <label for="absolutely-not">Absolutely Not!</label>
           </label><br>
-          
+
           <label for="improvements" id="improvements-label">What are some improvements that can be made?<br>
             <div id="inprovements-checkbox-div">
-            <div id="improvements-right-column">
-            <input type="checkbox" class="improvements-checkbox" id="cat-staffing" name="improvements" value="complaint about a cat">
-            <label for="cat-staffing" class="improvements-label">Work on our Cattitude/Remove a cat</label><br>
-            <input type="checkbox" class="improvements-checkbox" id="menu-changes" name="improvements" value="change the menu">
-            <label for="menu-changes" class="improvements-label">Update the selection of menu items</label>
-            </div>
-            <div id="improvements-left-column">
-            <input type="checkbox" class="improvements-checkbox" id="reduce-prices" name="improvements" value="reduce prices">
-            <label for="reduce-prices" class="improvements-label">Menu Item Prices are too high</label><br>
-            <input type="checkbox" class="improvements-checkbox" id="treats-and-toys" name="improvements" value="treats toys">
-            <label for="treats-and-toys" class="improvements-label">Change the selection of available toys and treats</label><br>
-            <input type="checkbox" class="improvements-checkbox" id="other" name="improvements" value="other">
-            <label for="other" class="improvements-label">Other <span class="lighten-text">(explain below)</span></label>
-          </div>
-          </div><br>
+              <div id="improvements-right-column">
+                <input type="checkbox" class="improvements-checkbox" id="cat-staffing" name="improvements"
+                  value="complaint about a cat">
+                <label for="cat-staffing" class="improvements-label">Work on our Cattitude/Remove a cat</label><br>
+                <input type="checkbox" class="improvements-checkbox" id="menu-changes" name="improvements"
+                  value="change the menu">
+                <label for="menu-changes" class="improvements-label">Update the selection of menu items</label>
+              </div>
+              <div id="improvements-left-column">
+                <input type="checkbox" class="improvements-checkbox" id="reduce-prices" name="improvements"
+                  value="reduce prices">
+                <label for="reduce-prices" class="improvements-label">Menu Item Prices are too high</label><br>
+                <input type="checkbox" class="improvements-checkbox" id="treats-and-toys" name="improvements"
+                  value="treats toys">
+                <label for="treats-and-toys" class="improvements-label">Change the selection of available toys and
+                  treats</label><br>
+                <input type="checkbox" class="improvements-checkbox" id="other" name="improvements" value="other">
+                <label for="other" class="improvements-label">Other <span class="lighten-text">(explain
+                    below)</span></label>
+              </div>
+            </div><br>
             <textarea id="additional-improvements" name="custom-suggestions" class="input-box" rows="4" cols="50"
               placeholder="Suggest other improvements"></textarea>
-          </label><br>
+          </label>
           <label for="submit" id="submit-label">
             <input type="submit" id="submit" class="form-group button">
           </label>
@@ -113,55 +122,55 @@
   <!--End of page-content-->
   <footer>
     <div class="footer-content">
-  <div class="footer-connect">
-    <div class="footer-heading">Connect</div>
-    <ul>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Find us on Facebook</a></li>
-      <li><a href="#">Follow us on Twitter</a></li>
-      <li><a href="#">Follow us on Instagram</a></li>
-      <li><a href="#">Follow us on TikTok</a></li>
-    </ul>
-  </div>
-  <div class="footer-company">
-    <div class="footer-heading">Company</div>
-    <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">Find a Location</a></li>
-    </ul>
-  </div>
-  <div class="footer-services">
-    <div class="footer-heading">Services</div>
-    <ul>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Adoption</a></li>
-      <li><a href="#">Gift Cards and Promotions</a></li>
-      <li><a href="#">Rewards</a></li>
-    </ul>
-  </div>
-  <div class="footer-get-help">
-    <div class="footer-heading">Get Help</div>
-    <ul>
-      <li><a href="#">FAQs</a></li>
-      <li><a href="#">Accessibility</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Site Map</a></li>
-    </ul>
-  </div>
-  <div class="footer-mailing footer" id="mailing-list">
-    <div class="footer-heading">Join Our Mailing List</div>
-    <p>Sign up to be notified of our special promotions, new products list, secret menu, and more.</p>
-    <form id="mailing-list-form">
-      <label for="mailing-list-email" id="mailing-list-email-label">
-        <input type="email" name="mailing-list-email" placeholder="Email Address">
-      </label>
-      <input type="submit" value="Send">
-    </form>
-  </div>
-    <p id="copyright">&copy; 2022 &nbsp;Julian Bristol &nbsp;All rights reserved.</p>
-  </div>
+      <div class="footer-connect">
+        <div class="footer-heading">Connect</div>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Find us on Facebook</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">Follow us on Instagram</a></li>
+          <li><a href="#">Follow us on TikTok</a></li>
+        </ul>
+      </div>
+      <div class="footer-company">
+        <div class="footer-heading">Company</div>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Find a Location</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <div class="footer-heading">Services</div>
+        <ul>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Adoption</a></li>
+          <li><a href="#">Gift Cards and Promotions</a></li>
+          <li><a href="#">Rewards</a></li>
+        </ul>
+      </div>
+      <div class="footer-get-help">
+        <div class="footer-heading">Get Help</div>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-mailing footer" id="mailing-list">
+        <div class="footer-heading">Join Our Mailing List</div>
+        <p>Sign up to be notified of our special promotions, new products list, secret menu, and more.</p>
+        <form id="mailing-list-form">
+          <label for="mailing-list-email" id="mailing-list-email-label">
+            <input type="email" name="mailing-list-email" placeholder="Email Address">
+          </label>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+      <p id="copyright">&copy; 2022 &nbsp;Julian Bristol &nbsp;All rights reserved.</p>
+    </div>
   </footer>
 </body>
 
