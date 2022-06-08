@@ -6,7 +6,7 @@ body{
   display: grid;
   grid-template-rows: 125px 1fr 200px; /*header body-content footer*/
   grid-template-areas: "header" "content" "footer";
-  row-gap: 10px;
+  row-gap: 5px;
   background-color: hsl(210deg 8% 15%);
   height: 100vh;
 }
@@ -26,7 +26,7 @@ header{
   "space4 logo-name space space5 space5"; /*I feel like this could have been done better*/
   row-gap: 10px;
   column-gap: 50px;
-  background-color: rgb(100, 166, 240);
+  background-color: rgb(203, 212, 237);
 }
 
 .logo {
@@ -79,11 +79,36 @@ ul{
 /* End of Header Content */
 
 /* Main Content */
-#page-content{
-  background-color: blueviolet;
-  display: grid;
+#page-wrapper {
   grid-area: content;
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+#cat-image{
+  order: 1;
+  width: 20%;
+  height: 100%;
+  background-image: url(src/images/Cat\ Sniffing\ Coffee.jpg);
+  background-size: cover;
+  background-position-x: -430px;
+}
+#content-wrapper{
+  order: 2;
+  width: 60%;
+}
+#coffee-image{
+  order: 3;
+  width: 20%;
+  background-image: url(src/images/Coffee.webp);
+  background-size: cover;
+  background-position-x: 930px;
+}
+#page-content{
+  background-color: rgb(237, 228, 203);
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: repeat(3, auto);
   grid-template-areas:
   "space1 title space2" 
@@ -111,6 +136,7 @@ max-width: 70%;
 margin: 0px auto 10px auto;
 font-size: 18pt;
 border: 2px solid black;
+background-color: rgb(237, 211, 203);
 }
 #survey-form-elements{
   margin-left: 10px;
