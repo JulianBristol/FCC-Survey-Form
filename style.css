@@ -63,7 +63,10 @@ nav li{
   transition: 0.4s;
 }
 nav li:hover{
-  color: gray;
+  color: rgb(186, 1, 1);
+  font-weight: 900;
+  font-size: larger;
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 nav a{
   text-decoration: none;
