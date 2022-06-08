@@ -296,5 +296,33 @@ grid-area: three;
 /* End of Footer */
 
 /* Beginning of Responsive Design */
-/* first resolution to deal with 1566 width 800+ height */
+/* Beginning of Screen Size Responsive Design*/
+@media (min-width: 1280px) {
+  nav{
+    margin-right: -100px;
+  }
+  nav li{
+    width: 120px;
+  }
+  #cat-image {
+    width: 15%;
+    background-position-x: -630px;
+  }
+  #content-wrapper {
+    width: 70%;
+  }
+  #coffee-image {
+    width: 15%;
+  }
+  #page-content{
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  #survey-form-box {
+    max-width: 100%;
+  }
+  #mailing-list-email-input{
+    width: 60%;
+  }
+}
+/* End of Screen Size Responsive Design*/
 /* End of Responsive Design */
