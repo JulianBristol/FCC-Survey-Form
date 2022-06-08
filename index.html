@@ -51,22 +51,23 @@
     <!--End of Description-box-->
 
     <div id="survey-form-box">
-      <div id="survey-form-elements">
         <form id="survey-form">
+          <div id="survey-form-elements">
           <div id="user-data">
-            <div id="form-labels">
-              <label for="name" class="label-user-data" id="name-label">First Name</label><br>
-              <label for="last-name" class="label-user-data" id="lname-label">Last Name</label><br>
-              <label for="email" class="label-user-data" id="email-label">Email Address</label><br>
-              <label for="age" class="label-user-data" id="number-label">Age</label>
-            </div>
-            <div id="form-input">
-              <input type="text" placeholder="First Name" class="form-group input-box" id="name" required><br>
-            <input type="text" placeholder="Last Name" class="form-group input-box" id="last-name"><br>
-            <input type="email" placeholder="Email" id="email" class="form-group input-box" required><br>
-            <input type="number" id="number" placeholder="Age" max="120" class="form-group input-box" min="13">
-            </div>
-          </div><br>
+              <label for="name" class="label-user-data" id="name-label">First Name
+                <input type="text" placeholder="First Name" class="form-group input-box" id="name" required>
+              </label>
+              <label for="last-name" class="label-user-data" id="lname-label">Last Name
+                <input type="text" placeholder="Last Name" class="form-group input-box" id="last-name">
+              </label>
+              <label for="email" class="label-user-data" id="email-label">Email Address
+                <input type="email" placeholder="Email" id="email" class="form-group input-box" required>
+              </label>
+              <label for="age" class="label-user-data" id="number-label">Age
+                <input type="number" id="number" placeholder="Age" max="120" class="form-group input-box" min="13">
+              </label>
+          </div>
+          <div id="favorite-item-dropdown">
           <label for="favorite-item" id="dropdown-label" favorite-item-label">What is your favorite item on the menu?
             <select id="dropdown" name="menu-items" class="input-box">
               <option value="beverage">Teas, Coffee, Juices</option>
@@ -77,7 +78,9 @@
               <option value="fruit">Fruits and Fruit Salad</option>
               <option value="other">Other</option>
             </select>
-          </label><br>
+          </label>
+        </div>
+        <div id="recommend-to-friend">
           <label for="recommend-to-friend" id="recommendation-label">Would you recommend a friend to Purrfect Cup?<br>
             <input type="radio" id="totally" name="recommend-to-friend" value="Totally!" checked>
             <label for="totally">Totally!</label><br>
@@ -85,8 +88,9 @@
             <label for="unsure">I'm not really sure...</label><br>
             <input type="radio" id="absolutely-not" name="recommend-to-friend" value="Absolutely Not!">
             <label for="absolutely-not">Absolutely Not!</label>
-          </label><br>
-
+          </label>
+        </div>
+        <div id="improvements">
           <label for="improvements" id="improvements-label">What are some improvements that can be made?<br>
             <div id="inprovements-checkbox-div">
               <div id="improvements-right-column">
@@ -113,12 +117,15 @@
             <textarea id="additional-improvements" name="custom-suggestions" class="input-box" rows="4" cols="50"
               placeholder="Suggest other improvements"></textarea>
           </label>
+        </div>
+        <div id="submit-button">
           <label for="submit" id="submit-label">
             <input type="submit" id="submit" class="form-group button">
           </label>
+        </div>
+        </div>
+        <!--End of Survey-form-elements-->
         </form>
-      </div>
-      <!--End of Survey-form-elements-->
     </div>
     <!--End of Survey-form-box-->
 
