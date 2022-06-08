@@ -324,5 +324,53 @@ grid-area: three;
     width: 60%;
   }
 }
+@media (min-width: 1024px) {
+  body{
+    grid-template-rows: 100px 1fr 200px;
+  }
+  #logo-image{
+    width: 70px;
+  }
+  #logo-text{
+    margin-top: -50px;
+    margin-left: -20px;
+    font-size: 18pt;
+  }
+  nav{
+    margin-right: -130px;
+    font-size: 14pt;
+    font-weight: 600;
+  }
+  nav li{
+    width: 90px;
+  }
+  #page-wrapper {
+    column-gap: 0px;
+  }
+  #cat-image {
+    width: 0%;
+  }
+  #content-wrapper {
+    width: 100%;
+  }
+  #coffee-image {
+    width: 0%;
+  }
+  #page-content{
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  #description-box{
+    margin-top: -40px;
+  }
+  #survey-form-box {
+    max-width: 80%;
+  }
+  .input-box{
+    margin: 0px 50px 20px 0px;
+  }
+  #mailing-list-email-input{
+    width: 60%;
+  }
+}
 /* End of Screen Size Responsive Design*/
 /* End of Responsive Design */
